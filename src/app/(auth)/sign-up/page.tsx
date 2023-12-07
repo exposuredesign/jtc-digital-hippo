@@ -29,6 +29,7 @@ const Page = () => {
 
   const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
     mutate({ email, password });
+    console.log("on submit");
   };
 
   return (
